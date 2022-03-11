@@ -1,5 +1,9 @@
+import '!style-loader!css-loader!sass-loader!../src/assets/styles/index.scss'
+import '!style-loader!css-loader!sass-loader!../src/assets/styles/reset.scss'
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
+  layout: 'centered',
   controls: {
     matchers: {
       color: /(background|color)$/i,

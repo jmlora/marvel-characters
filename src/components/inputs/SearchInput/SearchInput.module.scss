@@ -1,0 +1,22 @@
+@import 'src/assets/styles/variables.scss';
+
+.container {
+  position: relative;
+}
+
+.icon_box {
+  align-items: center;
+  background: $marvel;
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  height: 56px;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 56px;
+
+  svg {
+    fill: $white;
+  }
+}

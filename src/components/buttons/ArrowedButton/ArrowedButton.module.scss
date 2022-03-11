@@ -1,0 +1,14 @@
+@import 'src/assets/styles/variables.scss';
+
+button.arrowed_button {
+    justify-content: space-between;
+
+    svg {
+        fill: $white;
+    }
+    &:hover, &:focus, &:active {
+        svg {
+            fill: $grey1;
+        }
+    }
+}

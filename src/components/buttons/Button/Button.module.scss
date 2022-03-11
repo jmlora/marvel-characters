@@ -1,0 +1,32 @@
+@import 'src/assets/styles/variables.scss';
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+
+    position: relative;
+    width: 168px;
+    height: 48px;
+
+    background: $grey1;
+    border-radius: 5px;
+
+    color: $white;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.3px;
+
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid $grey1;
+
+    &:hover, &:focus, &:active {
+        background: $white;
+        color: $grey1;
+        box-sizing: border-box;
+    }
+}
