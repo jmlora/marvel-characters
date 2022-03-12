@@ -5,14 +5,15 @@
     border: 2px solid $grey4;
     box-sizing: border-box;
     border-radius: 5px;
-    color: $grey2;
-    font-weight: 500;
+    color: $grey1;
+    font-weight: 700;
     font-size: 18px;
     height: 56px;
     padding: 16px;
 
     &::placeholder {
-        color: $grey4;
+        color: $grey2;
+        font-weight: 500;
         opacity: 1;
       }
 }
