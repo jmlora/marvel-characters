@@ -1,0 +1,15 @@
+@import 'src/assets/styles/variables.scss';
+
+.backdrop {
+    align-items: center;
+    background-color: rgba(100, 100, 100, 0.05);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}

@@ -1,0 +1,24 @@
+@import 'src/assets/styles/variables.scss';
+
+.spinner {
+    animation: spin 1s ease infinite;
+
+    border: 4px solid rgba(0, 0, 0, 0.0);
+    border-bottom-color: $grey1;
+    border-left-color: $grey1;
+    border-radius: 50%;
+    border-top-color: $grey1;
+    height: 36px;
+    width: 36px;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
