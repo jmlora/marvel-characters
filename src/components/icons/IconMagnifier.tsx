@@ -12,12 +12,9 @@ interface IconMagnifierInterface {
 const IconArrow = ({
   color,
   size,
-}: IconMagnifierInterface) => {
-    return (
+}: IconMagnifierInterface) =>
       <svg className={styles.icon} fill={color} width={size} height={size}>
         <use xlinkHref={`${ArrowSvg}#icon-magnifier`} />
     </svg>
-    )
-  }
   
 export default IconArrow
