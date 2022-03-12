@@ -1,0 +1,33 @@
+@import 'src/assets/styles/variables.scss';
+
+.container {
+    background: $white;
+    border: 2px solid $grey4;
+    border-radius: 5px;
+    height: 460px;
+    width: 346px;
+
+    .image_container {
+        height: 230px;
+        width: auto;
+    
+        img {
+            border-radius: 5px 5px 0 0;
+        }
+    }
+
+    .content {
+        padding: 24px;
+
+        .title {
+            margin-bottom: 6px;
+        }
+        .description {
+            margin-bottom: 24px;
+        }
+        .button_container {
+            display: flex;
+            justify-content: end;
+        }
+    }
+}
