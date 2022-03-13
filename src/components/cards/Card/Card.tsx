@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Card.module.scss'
 import { H5, P } from '../../headers'
-import { ArrowedButton } from '../../buttons'
+import { ArrowedLinkButton } from '../../buttons'
 import { Image } from '../../images'
 
 interface CardProps {
@@ -9,15 +9,20 @@ interface CardProps {
   title: string,
   description: string,
   buttonText?: string,
-  onClick: React.MouseEventHandler
+  href: string,
+  /**
+   * target (_blank|_self|_parent|_top)
+  */
+  target: React.HTMLAttributeAnchorTarget | undefined
 }
 
 const Card = ({
   imageSrc,
   title,
   description,
+  href,
+  target = '_blank',
   buttonText = 'Read more',
-  onClick
 }: CardProps) =>
   <div className={styles.container}>
     <div className={styles.image_container}>
@@ -31,7 +36,7 @@ const Card = ({
         <P>{description}</P>
       </div>
       <div className={styles.button_container}>
-        <ArrowedButton onClick={onClick}>{buttonText}</ArrowedButton>
+        <ArrowedLinkButton href={href} target={target}>{buttonText}</ArrowedLinkButton>
       </div>
     </div>
   </div>
