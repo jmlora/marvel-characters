@@ -2,12 +2,14 @@ import React from 'react'
 import style from './Image.module.scss'
 
 interface ImageProps {
-  src: string
+  src: string,
+  alt?: string
 }
 
 const Image = ({
-  src
+  src,
+  alt = 'alt text'
 }: ImageProps) =>
-    <img src={src} className={style.image}/>
+    <img src={src} className={style.image} alt={alt}/>
 
 export default Image

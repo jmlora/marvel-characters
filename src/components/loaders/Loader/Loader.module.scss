@@ -1,8 +1,7 @@
 @import 'src/assets/styles/variables.scss';
 
-.backdrop {
+.loader_container {
     align-items: center;
-    background-color: rgba(100, 100, 100, 0.05);
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -11,5 +10,27 @@
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 9999;
+    z-index: 1;
+}
+.backdrop {
+    background-color: rgba(100, 100, 100, 0.3);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+.spinner_container {
+    align-items: center;
+    background: $white;
+    border-radius: 3px;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 100px;
+    z-index: 3;
 }

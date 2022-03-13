@@ -1,0 +1,18 @@
+@import './assets/styles/reset.scss';
+@import './assets/styles/index.scss';
+@import './assets/styles/variables.scss';
+
+.layout {
+  background: $background;
+  padding: 100px 165px;
+}
+.header {
+  margin-bottom: 36px;
+}
+
+.search_container {
+  margin-bottom: 66px;
+  max-width: 540px;
+  min-width: 300px;
+  width: 100%;
+}

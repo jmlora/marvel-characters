@@ -5,7 +5,12 @@ interface PProps {
   /**
    * Content
    */
-  children: React.ReactNode
+  children: React.ReactNode,
+
+  /**
+   * Variants: italic
+   */
+   italic?: boolean
 }
 
 /**
@@ -13,9 +18,10 @@ interface PProps {
  */
 const P = ({
   children,
+  italic
   }: PProps) => {
     return (
-      <p className={styles.p}>{children}</p>
+      <p className={`${styles.p} ${italic ? styles.italic : ''}`}>{children}</p>
     );
   };
   

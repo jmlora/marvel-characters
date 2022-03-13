@@ -5,6 +5,7 @@
     border: 2px solid $grey4;
     border-radius: 5px;
     height: 460px;
+    position: relative;
     width: 346px;
 
     .image_container {
@@ -21,13 +22,22 @@
 
         .title {
             margin-bottom: 6px;
+
+            h5 {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
         }
         .description {
             margin-bottom: 24px;
         }
-        .button_container {
-            display: flex;
-            justify-content: end;
-        }
+    }
+    .button_container {
+        bottom: 24px;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        right: 24px;
     }
 }

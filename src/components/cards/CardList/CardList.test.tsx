@@ -7,6 +7,7 @@ describe('CardList', () => {
     const args = {
       cards: [
         {
+          id: 1,
           title: 'Storm',
           href: 'http://gateway.marvel.com/v1/public/characters/1011334?ts=1&apikey=2dd3cfe0f7fc018dc11db7e0dd30d9a4&hash=4528110087ecd217614fc61ea2041c86',
           imageSrc: "http://i.annihil.us/u/prod/marvel/i/mg/3/40/4bb4680432f73/landscape_xlarge.jpg",
