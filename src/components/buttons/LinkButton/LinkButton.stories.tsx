@@ -1,12 +1,12 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { Button } from '.'
+import { LinkButton } from '.'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Buttons/Button',
-  component: Button,
+  title: 'Example/Buttons/LinkButton',
+  component: LinkButton,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     children: {
@@ -14,17 +14,21 @@ export default {
       type: 'string',
       description: 'Any children',
     },
-    onClick: {
-      name: 'onClick',
-      type: 'function',
-      description: 'onClick function',
-      action: 'clicked'
+    href: {
+      name: 'href',
+      type: 'string',
+      description: 'Link URL',
+    },
+    target: {
+      name: 'target',
+      type: 'string',
+      description: 'Link target (_blank|_self|_parent|_top)',
     }
   },
-} as ComponentMeta<typeof Button>
+} as ComponentMeta<typeof LinkButton>
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof LinkButton> = (args) => <LinkButton {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

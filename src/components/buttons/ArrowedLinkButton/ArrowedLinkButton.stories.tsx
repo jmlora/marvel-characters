@@ -1,12 +1,12 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { ArrowedButton } from '.'
+import { ArrowedLinkButton } from '.'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Buttons/ArrowedButton',
-  component: ArrowedButton,
+  title: 'Example/Buttons/ArrowedLinkButton',
+  component: ArrowedLinkButton,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     children: {
@@ -21,10 +21,10 @@ export default {
       action: 'clicked'
     }
   },
-} as ComponentMeta<typeof ArrowedButton>
+} as ComponentMeta<typeof ArrowedLinkButton>
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof ArrowedButton> = (args) => <ArrowedButton {...args} />;
+const Template: ComponentStory<typeof ArrowedLinkButton> = (args) => <ArrowedLinkButton {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

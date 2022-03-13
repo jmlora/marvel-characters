@@ -1,4 +1,4 @@
-import { Button } from './Button'
-import { ArrowedButton } from './ArrowedButton'
+import { LinkButton } from './LinkButton'
+import { ArrowedLinkButton } from './ArrowedLinkButton'
 
-export { Button, ArrowedButton }
+export { LinkButton, ArrowedLinkButton }

@@ -1,28 +1,24 @@
 @import 'src/assets/styles/variables.scss';
 
 .button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 22px;
-
-    position: relative;
-    width: 168px;
-    height: 48px;
-
     background: $grey1;
     border-radius: 5px;
-
+    align-items: center;
+    border: 2px solid $grey1;
+    box-sizing: border-box;
     color: $white;
-
+    cursor: pointer;
+    display: flex;
+    height: 48px;
+    flex-direction: row;
     font-weight: 700;
     font-size: 18px;
+    justify-content: center;
     line-height: 24.3px;
-
-    cursor: pointer;
-    box-sizing: border-box;
-    border: 2px solid $grey1;
+    padding: 12px 22px;
+    position: relative;
+    text-decoration: none;
+    width: 168px;
 
     &:hover, &:focus, &:active {
         background: $white;
