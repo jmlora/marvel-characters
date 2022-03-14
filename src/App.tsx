@@ -65,7 +65,7 @@ function App() {
           <div className={styles.search_container}>
             <SearchInput onChange={handleChange} />
           </div>
-          <CardList cards={data} />
+          {!isLoading && <CardList cards={data} />}
         </div>
       </div>
   )
