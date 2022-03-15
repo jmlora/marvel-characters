@@ -3,11 +3,9 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { LinkButton } from '.'
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: 'Example/Buttons/LinkButton',
   component: LinkButton,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     children: {
       name: 'children',
@@ -27,11 +25,17 @@ export default {
   },
 }
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template = (args) => <LinkButton {...args} />
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
+export const Primary = Template.bind({})
+
 Primary.args = {
   children: 'Read more',
-};
+}
+
+export const MarvelButton = Template.bind({})
+
+MarvelButton.args = {
+  children: 'Read more',
+  marvelMode: true,
+}

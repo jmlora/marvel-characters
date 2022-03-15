@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { SearchInput } from '.'
 
 const WrapperComponent = () => {
-  const [value, setValue] = useState<string>('')
+  const [value, setValue] = useState('')
   const handleChange = (event) => setValue(event.target.value)
 
   return (

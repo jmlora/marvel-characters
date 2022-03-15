@@ -7,6 +7,9 @@ import { Card } from '.'
 export default {
   title: 'Example/Cards/Card',
   component: Card,
+  decorators: [
+    (Story) => (<div style={{width: '350px'}}><Story /></div>)
+  ],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     imageSrc: {

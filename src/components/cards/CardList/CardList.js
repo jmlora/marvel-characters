@@ -9,7 +9,7 @@ const CardList = ({
     <div className={styles.list_container}>
       {cards?.pages.map((page) => 
         <>
-          {page?.data.results.map((character, index) => {
+          {page?.data.results.map((character) => {
             let card = {
               id: character.id,
               title: character.name,
