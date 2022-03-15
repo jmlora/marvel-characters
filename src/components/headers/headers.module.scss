@@ -5,6 +5,7 @@
     font-size: 48px;
     font-weight: 900;
     line-height: 56px;
+    width: 100%;
 }
 
 .h4 {
@@ -12,6 +13,7 @@
     font-size: 36px;
     font-weight: 700;
     line-height: 42px;
+    width: 100%;
 }
 
 .h5 {
@@ -19,14 +21,15 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
+    width: 100%;
 }
-
 
 .p {
     color: $grey2;
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
+    width: 100%;
 }
 
 .p.italic {

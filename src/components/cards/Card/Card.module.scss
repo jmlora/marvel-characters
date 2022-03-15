@@ -4,9 +4,10 @@
     background: $white;
     border: 2px solid $grey4;
     border-radius: 5px;
+    box-sizing: border-box;
     height: 460px;
     position: relative;
-    width: 346px;
+    width: 100%;
 
     .image_container {
         height: 230px;
@@ -19,13 +20,13 @@
 
     .content {
         padding: 24px;
+        box-sizing: border-box;
 
         .title {
             margin-bottom: 6px;
 
             h5 {
                 text-overflow: ellipsis;
-                white-space: nowrap;
                 overflow: hidden;
             }
         }

@@ -3,16 +3,30 @@
 @import './assets/styles/variables.scss';
 
 .layout {
-  background: $background;
-  padding: 100px 165px;
+  padding: 50px 20px;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(69px, 1fr));
+  grid-template-rows: auto auto auto auto; 
+  gap: 0px 20px; 
 }
 .header {
+  grid-row: 1;
+  grid-column: span 1/-1;
   margin-bottom: 36px;
 }
 
 .search_container {
+  grid-row: 2;
+  grid-column: span 1/-1;
   margin-bottom: 66px;
-  max-width: 540px;
-  min-width: 300px;
-  width: 100%;
+}
+
+.result_container {
+  grid-row: 3;
+  grid-column: span 4;
+}
+
+.load_more_container {
+  grid-row: 4;
+  grid-column: span 1/-1;
 }

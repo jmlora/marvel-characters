@@ -20,7 +20,9 @@ interface ButtonProps {
   /**
    * target (_blank|_self|_parent|_top)
    */
-  target: React.HTMLAttributeAnchorTarget | undefined
+  target?: React.HTMLAttributeAnchorTarget | undefined,
+
+  onClick?: React.MouseEventHandler<HTMLAnchorElement> | undefined,
 }
 
 /**
@@ -30,7 +32,8 @@ const LinkButton = ({
     className,
     children,
     href,
-    target = '_blank'
-  }: ButtonProps) => <a type="button" className={`${className} ${styles.button}`} href={href} target={target}>{children}</a>
+    target,
+    onClick
+  }: ButtonProps) => <a className={`${className ? className : ''} ${styles.button}`} href={href} target={target} onClick={onClick}>{children}</a>
   
 export default LinkButton
