@@ -13,17 +13,27 @@
   grid-row: 1;
   grid-column: span 1/-1;
   margin-bottom: 36px;
+
+  @media (min-width: 1230px) {
+    grid-column: span 12;
+  }
 }
 
 .search_container {
   grid-row: 2;
   grid-column: span 1/-1;
   margin-bottom: 66px;
+  @media (min-width: 1230px) {
+    grid-column: span 6;
+  }
 }
 
 .result_container {
   grid-row: 3;
-  grid-column: span 4;
+  grid-column: span 1/-1;
+  @media (min-width: 1230px) {
+    grid-column: span 12;
+  }
 }
 
 .load_more_container {
@@ -31,4 +41,7 @@
   grid-row: 4;
   grid-column: span 1/-1;
   justify-content: center;
+  @media (min-width: 1230px) {
+    grid-column: span 12;
+  }
 }

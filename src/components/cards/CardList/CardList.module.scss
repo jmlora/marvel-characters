@@ -13,6 +13,7 @@
 
     @media (min-width: 1230px) {
         grid-template-columns: repeat(12, 65px);
+        grid-column: span 12;
     }
     .card_list_item {
         grid-column: span 4;
