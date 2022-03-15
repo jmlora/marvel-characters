@@ -16,7 +16,7 @@ describe('SearchInput component', () => {
 
 describe('SearchInput functionality', () => {
   const WrapperComponent = () => {
-    const [value, setValue] = useState<string>('')
+    const [value, setValue] = useState('')
     const handleChange = (event) => setValue(event.target.value)
 
     return (
