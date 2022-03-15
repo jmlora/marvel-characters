@@ -4,19 +4,6 @@ import { H5, P } from '../../headers'
 import { ArrowedLinkButton } from '../../buttons'
 import { Image } from '../../images'
 
-export interface CardProps {
-  id: number,
-  imageSrc: string,
-  title: string,
-  description: string,
-  buttonText?: string,
-  href: string,
-  /**
-   * target (_blank|_self|_parent|_top)
-  */
-  target?: React.HTMLAttributeAnchorTarget | undefined
-}
-
 const defaultDescription = '(No description available)'
 
 const Card = ({
@@ -26,7 +13,7 @@ const Card = ({
   href,
   target = '_blank',
   buttonText = 'Read more',
-}: CardProps) =>
+}) =>
   <div className={styles.container}>
     <div className={styles.image_container}>
       <Image src={imageSrc} />

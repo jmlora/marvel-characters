@@ -18,7 +18,7 @@ describe('Input', () => {
 describe('Input functionality', () => {
   const WrapperComponent = () => {
     const [value, setValue] = useState<string>('')
-    const handleChange:React.ChangeEventHandler<HTMLInputElement> = (event): void => setValue(event.target.value)
+    const handleChange = (event) => setValue(event.target.value)
 
     return (
       <div>

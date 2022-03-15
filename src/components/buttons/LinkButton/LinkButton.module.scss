@@ -26,3 +26,15 @@
         box-sizing: border-box;
     }
 }
+
+.marvelMode {
+    background: $marvel;
+    border-color: $marvel;
+    width: 333px;
+
+    &:hover, &:focus, &:active {
+        background: $white;
+        color: $marvel;
+        box-sizing: border-box;
+    }
+}

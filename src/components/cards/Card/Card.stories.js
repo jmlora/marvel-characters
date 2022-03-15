@@ -40,10 +40,10 @@ export default {
       description: 'Link target (_blank|_self|_parent|_top)'
     }
   },
-} as ComponentMeta<typeof Card>
+}
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
+const Template = (args) => <Card {...args} />
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

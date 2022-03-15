@@ -1,11 +1,9 @@
 import React, {useState} from 'react'
-import { ComponentStory, ComponentMeta } from '@storybook/react'
-
 import { SearchInput } from '.'
 
 const WrapperComponent = () => {
   const [value, setValue] = useState<string>('')
-  const handleChange:React.ChangeEventHandler<HTMLInputElement> = (event): void => setValue(event.target.value)
+  const handleChange = (event) => setValue(event.target.value)
 
   return (
     <div>
@@ -38,10 +36,10 @@ export default {
       action: 'changed'
     }
   },
-} as ComponentMeta<typeof WrapperComponent>
+}
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof WrapperComponent> = () => <WrapperComponent  />
+const Template = () => <WrapperComponent  />
 
 export const Primary = Template.bind({});
 

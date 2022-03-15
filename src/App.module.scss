@@ -7,7 +7,7 @@
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(69px, 1fr));
   grid-template-rows: auto auto auto auto; 
-  gap: 0px 20px; 
+  gap: 0px 20px;
 }
 .header {
   grid-row: 1;
@@ -27,6 +27,8 @@
 }
 
 .load_more_container {
+  display: grid;
   grid-row: 4;
   grid-column: span 1/-1;
+  justify-content: center;
 }

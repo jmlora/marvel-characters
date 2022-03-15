@@ -8,12 +8,12 @@ import { CardListProps } from './CardList'
 export default {
   title: 'Example/Cards/CardList',
   component: CardList,
-} as ComponentMeta<typeof CardList>
+}
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof CardList> = (args) => <CardList {...args} />
+const Template = (args) => <CardList {...args} />
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   cards: [

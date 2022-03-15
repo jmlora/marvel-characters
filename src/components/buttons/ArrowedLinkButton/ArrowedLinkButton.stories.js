@@ -21,10 +21,10 @@ export default {
       action: 'clicked'
     }
   },
-} as ComponentMeta<typeof ArrowedLinkButton>
+}
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof ArrowedLinkButton> = (args) => <ArrowedLinkButton {...args} />;
+const Template = (args) => <ArrowedLinkButton {...args} />
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
