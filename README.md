@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# marvel-characters
+
+Search any character of Marvel Universe using Marvel Developer API (https://developer.marvel.com/)
+
+Branch 'ft/react-query' uses React Query to manage API requests and pagination.
+
+Branch 'ft/redux-sagas' uses Redux and Sagas to manage state and API requests.
+
+TODO: Sagas tests are failing in call effect.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
