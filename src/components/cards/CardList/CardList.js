@@ -1,29 +1,21 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
+import { useSelector } from 'react-redux'
 import styles from './CardList.module.scss'
 import { Card } from '../Card'
 import { P } from '../../headers'
+import { selectIsFetching } from '../../../store/store/ui/uiSelectors'
+import { selectCharacters } from '../../../store/store/characters/charactersSelectors'
 
-const CardList = ({
-  cards,
-}) => 
+const CardList = () => {
+  const isFetching = useSelector(selectIsFetching)
+  const characters = useSelector(selectCharacters)
+
+  return (
     <div className={styles.list_container}>
-      {cards?.pages.map((page) => 
-        <>
-          {page?.data.results.map((character) => {
-            let card = {
-              id: character.id,
-              title: character.name,
-              description: character.description,
-              imageSrc: `${character.thumbnail.path}/landscape_xlarge.${character.thumbnail.extension}`,
-              href: character.urls.find(url => url.type === 'detail')?.url
-            }
-            
-            return (<div className={styles.card_list_item} key={card.id}><Card {...card} /></div>)
-          })
-        }
-        </>
-      )}
-      {(!cards || cards.pages[0].data.total === 0) && <div className={styles.no_result}><P>No results :(</P></div>}
+      {characters?.map((character) => <div className={styles.card_list_item} key={character.id}><Card {...character} /></div>)}
+      {(!characters || characters.length === 0) && !isFetching && <div className={styles.no_result}><P>No results :(</P></div>}
     </div>
+  )
+}
 
 export default CardList

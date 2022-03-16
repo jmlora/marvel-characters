@@ -7,20 +7,20 @@ import { Image } from '../../images'
 const defaultDescription = '(No description available)'
 
 const Card = ({
-  imageSrc,
-  title,
+  image,
+  name,
   description,
-  href,
+  url,
   target = '_blank',
   buttonText = 'Read more',
 }) =>
   <div className={styles.container}>
     <div className={styles.image_container}>
-      <Image src={imageSrc} />
+      <Image src={image} />
     </div>
     <div className={styles.content}>
       <div className={styles.title}>
-        <H5>{title}</H5>
+        <H5>{name}</H5>
       </div>
       <div className={styles.description}>
         {description && <P>{description.length > 95 ? description.substring(0, 95) + '...' : description}</P>}
@@ -28,7 +28,7 @@ const Card = ({
       </div>
     </div>
     <div className={styles.button_container}>
-      <ArrowedLinkButton href={href} target={target}>{buttonText}</ArrowedLinkButton>
+      <ArrowedLinkButton href={url} target={target}>{buttonText}</ArrowedLinkButton>
     </div>
   </div>
 
