@@ -7,8 +7,7 @@ Branch 'ft/redux-sagas' uses Redux and Sagas to manage state and API requests.
 
 TODO: Sagas tests are failing in call effect.
 
-
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
