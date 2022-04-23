@@ -5,11 +5,12 @@ import { resetCharactersAction, setCharactersAction } from '../../store/characte
 import { isFetchingAction } from '../../store/ui/uiActions'
 
 export function* getCharactersSaga({ payload: { searchString, page }}) {
-  if (searchString.length > 0) {
+  if (searchString.length > 0 && page === 0) {
     yield put(resetCharactersAction())
   } else if (page === 0) {
     yield put(resetCharactersAction())
   }
+
   yield put(isFetchingAction({isFetching: true}))
   const data = yield call(fetchCharacters, {searchString, page})
   yield put(setCharactersAction(data))

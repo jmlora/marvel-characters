@@ -26,14 +26,21 @@ function App() {
   }, [dispatch])
 
   useEffect(() => {
-    dispatch(getCharactersAction({ searchString, page: 0}))
+    if (page !== 0) {
+      setPage(0)
+    } else {
+      dispatch(getCharactersAction({ searchString, page}))
+    }
   }, [searchString])
 
   const fetchNextPage = () => {
-    setPage(page => page + 1)
-    dispatch(getCharactersAction({ searchString, page }))
+    setPage(page + 1)
     return false
   }
+
+  useEffect(() => {
+    dispatch(getCharactersAction({ searchString, page}))
+  }, [page])
 
 
   return (
@@ -48,7 +55,7 @@ function App() {
         {<CardList cards={characters} />}
         {!isFetching &&
           <div className={styles.load_more_container}>
-            <LinkButton href="#" marvelMode onClick={fetchNextPage}>Load more characters</LinkButton>
+            <LinkButton marvelMode onClick={fetchNextPage}>Load more characters</LinkButton>
           </div>
         }
       </div>
