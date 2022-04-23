@@ -5,6 +5,8 @@ Branch 'ft/react-query' uses React Query to manage API requests and pagination.
 
 Branch 'ft/redux-sagas' uses Redux and Sagas to manage state and API requests.
 
+Branch 'main' is up to dated with 'ft/redux-sagas'.
+
 TODO: Sagas tests are failing in call effect.
 
 ## Getting Started with Create React App
