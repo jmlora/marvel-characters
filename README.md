@@ -7,7 +7,9 @@ Branch 'ft/redux-sagas' uses Redux and Sagas to manage state and API requests.
 
 Branch 'main' is up to dated with 'ft/redux-sagas'.
 
-TODO: Sagas tests are failing in call effect.
+Components and sagas have tests. Run `yarn test`.
+
+Storybook is included in order to see individual components. Run `yarn storybook`
 
 ## Getting Started with Create React App
 
